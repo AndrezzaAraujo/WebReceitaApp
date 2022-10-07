@@ -1,0 +1,44 @@
+<div class="contain">
+  <div class=" card shadow-lg o- hidden border-0 mx-auto">
+    <div class="card-body p-0">
+    <div class="p-3">
+      <hr/>
+        <div class= "form-row">
+          <div class="col-lg-6">
+            <form class="user" #loginForm="ngForm" style="margin-right: 0px" (ngSubmit)= "login()">
+              <div class=" form-group">
+                <input class="form-control form-control-user" type="email" (keyup)="setEmail($event)" placeholder="E-mail" name="email" autocomplete="on"/>
+              </div>
+              <div class=" form-group">
+                <input class="form-control form-control-user" type="password" (keyup)="setPassword($event)" placeholder="Password" name="email" autocomplete="off"/>
+              </div>
+              <div class=" form-group">
+                <div class="text-center"><a class= "small"> Forgot Password</a></div>
+              </div>
+              <button class="btn button btn-block text-white btn-user" style="margin-top: 94px" type="submit">Login</button>
+            </form>
+          </div>
+          <div class="col-lg-6" style="border-left: 1 px solid rgba(0,0,0,.1)">
+            <form class= "user" #registerForm="ngForm" style="margin-left: 6px;" (ngSubmit)= "register()">
+              <div class="form-group">
+                <input class="form-control form-control-user" type="email" (keyup)="setEmail($event)" placeholder="E-mail" name="email"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control form-control-user" type="dateBirth" (keyup)="setDateBirth($event)" placeholder="DateBirth" name="dateBirth"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control form-control-user" type="password" (keyup)="setPassword($event)" placeholder="Password" name="password" autocomplete="off"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control form-control-user" type="password" (keyup)="setConfirmPassword($event)" placeholder="ConfirmPassword" name="confirmpassword" autocomplete="off"/>
+              </div>
+              <button class="btn button btn-block text-white btn-user" style="margin-top: 0px" type="submit">Register</button>
+            </form>
+        </div>
+      </div>
+    <hr/>
+  </div>
+</div>
+<p-toast position="bottom-right"></p-toast>
+
+

@@ -1,0 +1,16 @@
+body{
+
+  margin:auto;
+  background-color:rgb(240, 240, 248);
+  background-color:rgb(16, 16, 5) repeat x;
+  height: 0%;
+ 
+}
+
+.router-active {
+  color: rgb(243, 243, 230);
+  border-radius: 10px;
+  text-align: center;
+  text-decoration-color:black
+
+}
